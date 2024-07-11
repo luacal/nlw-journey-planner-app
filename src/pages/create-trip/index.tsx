@@ -22,8 +22,6 @@ export function CreateTripPage() {
   >();
 
   const [emailsToInvite, setEmailsToInvite] = useState([
-    "person124@hotmail.com",
-    "jessica.white44@yahoo.com",
   ]);
 
   function openGuestsInput() {
@@ -105,12 +103,12 @@ export function CreateTripPage() {
     }
 
     // alternativa 1
-    setEmailsToInvite((prev) => {
-      return [...prev, email];
-    });
+    // setEmailsToInvite((prev) => {
+    //   return [...prev, email];
+    // });
 
     // alternativa 2
-    // setEmailsToInvite([...emailsToInvite, email]);
+     setEmailsToInvite([...emailsToInvite, email]);
 
     event.currentTarget.reset();
   }
